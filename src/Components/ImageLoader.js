@@ -59,7 +59,8 @@ const CustomFastImage = (uri, cacheKey) => {
           //console.log("cached NEw!");
           setUri(cached.path);
         } else {
-          Alert.alert(`Couldn't load Image!`);
+          //Alert.alert(`Couldn't load Image!`);
+          return {uri: uri}
         }
       }
     }

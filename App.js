@@ -36,7 +36,7 @@ const App = ({ navigation }) => {
         <Stack.Screen name="Spash" component={SplashScreen} options={{headerShown: false}} />
         <Stack.Screen name="Login" component={LoginScreen} options={{headerShown: false}} />
         <Stack.Screen name="Register" component={RegisterScreen} />
-        <Stack.Screen name="Drawer" component={DrawerNavigation} options={{headerShown: false}} />
+        <Stack.Screen name="Drawer" component={DrawerNavigation} options={({ navigation }) => ({headerShown: false, gestureEnabled: false})} />
         <Stack.Screen name='Order' component={OrderScreen} />
         <Stack.Screen name='Info' component={InfoScreen} />
         <Stack.Screen name='Add' component={AddScreen}  />
